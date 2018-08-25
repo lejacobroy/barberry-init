@@ -5,12 +5,12 @@ locale-gen en_US.UTF-8
 update-locale en_US.UTF-8
 echo 'Locale updated to en_US.UTF-8'
 ##Changing Hostname
-CURRNET_HOSTNAME='cat /etc/hostname | tr -d " \t\n\r"'
-rm /etc/hostname
-read -p 'Hostname: ' $hostname
-cat $hostname > /etc/hostname
-sed -i "s/127.0.1.1.*$CURRENT_HOSTNAME/127.0.1.1\t$hostname/g" /etc/hosts
-echo 'Hostname Changed to ' $hostname
+#CURRNET_HOSTNAME='cat /etc/hostname | tr -d " \t\n\r"'
+#rm /etc/hostname
+#read -p 'Hostname: ' $hostname
+#cat $hostname > /etc/hostname
+#sed -i "s/127.0.1.1.*$CURRENT_HOSTNAME/127.0.1.1\t$hostname/g" /etc/hosts
+#echo 'Hostname Changed to ' $hostname
 ##changing password
 passwd pi &&
 echo 'pi password changed'
