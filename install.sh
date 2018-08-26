@@ -23,5 +23,5 @@ wget -O - https://raw.githubusercontent.com/sdesalas/node-pi-zero/master/install
 echo 'updates and Node.js have been installed'
 
 #Cloning Barberry
-git clone https://github.com/lejacobroy/barberry /home/pi/barberry/
+git clone https://github.com/lejacobroy/barberry-client/ /home/pi/barberry/
 #cron jobs
